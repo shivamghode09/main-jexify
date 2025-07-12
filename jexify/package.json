@@ -1,0 +1,31 @@
+{
+  "name": "jexify",
+  "version": "1.0.1",
+  "description": "Jexify is a lightweight JavaScript library for building user interfaces.",
+  "keywords": [
+    "jexify",
+    "web",
+    "library",
+    "ui",
+    "javascript"
+  ],
+  "homepage": "https://github.com/shivamghode09/main-jexify#readme",
+  "bugs": {
+    "url": "https://github.com/shivamghode09/main-jexify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamghode09/main-jexify.git"
+  },
+  "license": "ISC",
+  "author": "Shivam Ghode",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "vite": "^6.3.5"
+  }
+}

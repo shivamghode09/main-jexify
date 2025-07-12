@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  /* Color Variables */
+  --color-primary: #001224;
+  --color-secondary: #0099ff;
+  --color-text: #ffffff;
+  --color-text-secondary: #ababab;
+  --color-button-bg: #C0C0C0;
+  --color-button-text: #232425;
+
+  /* Font Variables */
+  --font-size-title: 2.5rem;
+  --font-size-body: 1rem;
+  --font-size-footer: 1rem;
+  --font-weight-bold: 600;
+  --font-weight-medium: 500;
+
+  /* Spacing Variables */
+  --spacing-small: 0.6em;
+  --spacing-medium: 1em;
+  --spacing-large: 1.2em;
+  --spacing-xl: 2em;
+
+  /* Effect Variables */
+  --shadow-hover: 0 0 3em rgba(0, 153, 255, 0.5);
+  --text-shadow: 0 0 15px rgba(0, 153, 255, 0.5);
+  --transition-fast: 300ms;
+  --transition-slow: 1s;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-medium);
+}
+
+.logo {
+  height: 9em;
+  padding: var(--spacing-medium);
+  will-change: filter;
+  transition: filter var(--transition-fast) ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(var(--shadow-hover));
+}
+
+.title {
+  font-size: var(--font-size-title);
+  line-height: 1.1;
+  color: var(--color-text);
+  text-shadow: var(--text-shadow);
+  margin-bottom: var(--spacing-medium);
+}
+
+.btn-container {
+  margin: var(--spacing-xl) 0;
+}
+
+button {
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  padding: var(--spacing-small) var(--spacing-large);
+  font-size: var(--font-size-body);
+  color: var(--color-button-text);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-button-bg);
+  cursor: pointer;
+  transition: border-color var(--transition-slow) ease;
+}
+
+button:hover {
+  border-color: color-mix(in srgb, var(--color-secondary) 80%, transparent);
+}
+
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-offset: 2px;
+}
+
+.footer {
+  font-size: var(--font-size-footer);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  :root {
+    --font-size-title: 2rem;
+    --font-size-body: 0.9rem;
+    --font-size-footer: 0.9rem;
+  }
+
+  .logo {
+    height: 8em;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
