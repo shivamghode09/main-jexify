@@ -1,6 +1,6 @@
-<img src="./jexify.svg" alt="Jely Logo" width="100">
 
-# Jexify - Modern JavaScript Tools
+
+# <img src="./jexify.svg" alt="Jely Logo" width="40"> Jexify - Modern JavaScript Tools
 
 This repository contains two main projects:
 
