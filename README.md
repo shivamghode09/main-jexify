@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/shivamghode09/main-jely/jexify.svg" alt="Jely Logo" width="200">
+<img src="./jexify.svg" alt="Jely Logo" width="200">
 
 # Jexify - Modern JavaScript Tools
 
