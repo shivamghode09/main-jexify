@@ -1,3 +1,5 @@
+![Jely Logo](./assets/jely.png)
+
 # Jexify - Modern JavaScript Tools
 
 This repository contains two main projects:
