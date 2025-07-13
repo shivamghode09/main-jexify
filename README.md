@@ -1,4 +1,4 @@
-![Jely Logo](./jely.png)
+![Jely Logo](./jexify.svg)
 
 # Jexify - Modern JavaScript Tools
 
